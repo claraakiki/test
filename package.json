@@ -1,0 +1,24 @@
+{
+  "name": "my_package",
+  "version": "1.0.0",
+  "description": "Website which allows you to consult reviews to help you buy the best products.",
+  "main": "app.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "bootstrap": "^4.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claraakiki/test.git"
+  },
+  "author": "lamia hari clara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claraakiki/test/issues"
+  },
+  "homepage": "https://github.com/claraakiki/test#readme"
+}

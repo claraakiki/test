@@ -1,0 +1,40 @@
+body{background-color: #d7dbdb;}
+
+.row{display: inline-block;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.container{
+    text-align: center;
+}
+
+#page-content-wrapper{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+*{font-family: Roboto;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+#comment{
+    width: 300px;
+    height: 100px;
+    border: 1px solid #000000;
+}
+
+#disconnectBtn{
+    width: 167px;
+    height: 70px;
+    background: rgba(112, 217, 213, 0.5);
+    border-radius: 30px;    
+}
+

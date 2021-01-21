@@ -1,0 +1,17 @@
+
+*{font-family: Roboto;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+#updateBtn{
+    width: 167px;
+    height: 50px;
+    background: rgba(112, 217, 213, 0.5);
+    border-radius: 30px;  
+}
+
+#map{
+    height: 200px
+}

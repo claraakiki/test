@@ -1,0 +1,14 @@
+*{font-family: Roboto;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+#contactBtn{
+    width: 167px;
+    height: 70px;
+    background: rgba(112, 217, 213, 0.5);
+    border-radius: 30px;    
+}
+

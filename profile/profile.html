@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <title>BTRShopCode</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="../images/Logo_betterShop.png">
+        <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../node_modules/jquery/dist/jquery.min.js" rel="script">
+        <link href="../node_modules/bootstrap/dist/js/bootstrap.min.js" rel="script">
+        <link href='../profile/profile.css' rel="stylesheet">
+        <script src="../profile/profile.js"></script>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  </head>
+    
+	<body onload="main()">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <header>
+                <!-- toggle -->
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ecfbfb;">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/Logo_betterShop.png" width="30" height="30" class="d-inline-block" alt="">
+                        BTRShop
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <nav class="navbar-nav ml-auto">
+                        <button id="menu-toggle" class="btn" style="background-color: #ecfbfb;" onclick="toggleDropdown()">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </nav>
+
+                <!-- toggle -->
+                <div class="collapse navbar-collapse" id="dropdown" style = "display: none">
+                    <div class="list-group-item list-group-item-action bg-light" id="name-dropdown">User name</div><!-- name of the user added here when logged in -->
+                    <div class="list-group list-group-flush">
+                        <a href="../contact/contact.html" class="list-group-item list-group-item-action bg-light">Contact</a>
+                        <a href="../logout/logout.html" class="list-group-item list-group-item-action bg-light">Log Out</a>
+                    </div>
+                </div>
+                <!-- /#toggle -->
+            </header>
+
+
+            <!--MAIN CONTENT-->
+            <section id="content"  class="center-block " style="height:100vh">
+
+                <br><br>
+
+
+
+                <form id="profile-form" class="text-center" style="width: 600px; margin:auto;"onsubmit="return updateInfo()">
+                    
+                    <div class="form-group">
+                        <img id="image"class="rounded-circle z-depth-2" alt="profile picture" width="140" height="140" src="../images/generic-profile.png"  data-holder-rendered="true">
+
+                        <br>
+                        <input type="file" onchange="importImage()">
+                    </div>
+
+                    <br><br>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="firstname" placeholder="First Name" name="firstname" id="firstname" class="form-control" required >
+                                </div> 
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="lastname" placeholder="Last Name" name="lastname" id="lastname" class="form-control" required >
+                                </div> 
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" placeholder="name@example.com" name="email" id="email" required readonly class="form-control"><br>
+                    </div>
+
+                    <div class="form-group">
+                        <input  type="tel" placeholder="+33 0 00 00 00 00" name="phone_num" id="phone_num" pattern="^\+(?:[0-9] ?){6,14}[0-9]$"  class="form-control"><br>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="updateBtn" id="updateBtn" >Update</button>
+                    </div>
+
+                    <div class="form-group" id="map">
+                        <button type="button" onClick="return displayLocation()" class="mapBtn" id="mapBtn" >Display Map</button>
+                    </div>
+                    <br><br><br><br><br><br><br><br>
+                </form>
+            </section>
+            
+        
+            
+        </div>
+	</body>
+</html>
+
+
